@@ -9,12 +9,11 @@ class Anagram
   
   def match(arrayofpossibleanagrams)
     newarray=[]
-    arrayofpossibleanagrams.map do |scramword|
-      if scramwordword.sort == word.sort
-        newarray<<word
-      end
-      end
-    newarray
+    arrayofpossibleanagrams.each do |scramword|
+     if scramword.split('').sort.join == word.split('').sort.join
+      newarray<<scramword
+    end
+  newarray
   end
       
 
