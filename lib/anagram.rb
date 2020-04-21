@@ -13,6 +13,7 @@ class Anagram
      if scramword.split('').sort.join == word.split('').sort.join
       newarray<<scramword
     end
+  end
   newarray
   end
       
